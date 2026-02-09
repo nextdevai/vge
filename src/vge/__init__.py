@@ -3,7 +3,7 @@ Variance-Gated Ensembles (VGE)
 A framework for epistemic-aware uncertainty estimation in deep ensembles.
 """
 
-from .metrics import compute_vgmu
+from .metrics import compute_epjs, compute_epkl, compute_vgmu, safe_decomposition
 from .models import VGN, DeepEnsemble, LastLayerEnsemble, WideResNet
 from .predictors import ensemble_predict, mcd_predict, predict, vgn_predict
 from .trainers import EnsembleTrainer, Trainer, VGNTrainer
@@ -29,6 +29,9 @@ __all__ = [
     "vgn_predict",
     "mcd_predict",
     # Metrics
+    "safe_decomposition",
+    "compute_epkl",
+    "compute_epjs",
     "compute_vgmu",
     # Utilities
     "select_device",

@@ -45,11 +45,8 @@ where μ is the ensemble mean, σ is the ensemble standard deviation, and k is a
 git clone <repository-url>
 cd vge
 
-# Install as a package (recommended)
+# Install as a package
 pip install -e .
-
-# Or install dependencies only
-pip install -r requirements.txt
 ```
 
 ### From Wheel
@@ -57,7 +54,7 @@ pip install -r requirements.txt
 A pre-built wheel can be shared and installed directly:
 
 ```bash
-pip install vge-1.0.0-py3-none-any.whl
+pip install dist/vge-1.0.0-py3-none-any.whl
 ```
 
 To build the wheel yourself:
@@ -128,7 +125,6 @@ vge/
 ├── examples/
 │   └── quick_start.py # Quick start demo of all methods
 ├── pyproject.toml     # Package configuration
-├── requirements.txt   # Python dependencies
 └── README.md          # This file
 ```
 

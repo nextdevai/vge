@@ -33,7 +33,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 
-from src.vge import (
+from vge import (
     VGN,
     DeepEnsemble,
     EarlyStopping,
@@ -507,6 +507,7 @@ def main():
     if args.method == "baseline":
         predict(model, test_loader, device, fname=pred_fname)
     elif args.method in ("de", "lle") and args.use_vgn:
+        assert isinstance(model, VGN)
         vgn_predict(model, test_loader, device, fname=pred_fname)
     elif args.method in ("de", "lle"):
         ensemble_predict(model, test_loader, device, fname=pred_fname)

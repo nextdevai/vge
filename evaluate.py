@@ -33,7 +33,7 @@ import pandas as pd
 import torch
 from sklearn.metrics import accuracy_score, f1_score
 
-from src.vge.metrics import (
+from vge.metrics import (
     compute_epjs,
     compute_epkl,
     compute_vgmu,
