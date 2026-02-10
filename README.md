@@ -38,12 +38,18 @@ where μ is the ensemble mean, σ is the ensemble standard deviation, and k is a
 
 ## Installation
 
-### From Source
-
 ```bash
 # Clone the repository
 git clone <repository-url>
 cd vge
+```
+
+### From Source
+
+```bash
+# Create and activate a virtual environment
+python -m venv .venv
+source .venv/bin/activate
 
 # Install as a package
 pip install -e .
@@ -51,9 +57,11 @@ pip install -e .
 
 ### From Wheel
 
-A pre-built wheel can be shared and installed directly:
-
 ```bash
+# Create and activate a virtual environment
+python -m venv .venv
+source .venv/bin/activate
+
 pip install dist/vge-1.0.0-py3-none-any.whl
 ```
 
