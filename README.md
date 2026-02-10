@@ -676,7 +676,6 @@ The default architecture is WideResNet-28-10:
 
 - Depth: 28 layers
 - Width multiplier: 10
-- Blocks: 4-4-4 (three groups)
 - Total parameters: ~36M (with 10 heads)
 
 ### Last-Layer Ensemble
@@ -693,12 +692,11 @@ Instead of training M independent models, we use a single backbone with M classi
 If you use this code, please cite:
 
 ```bibtex
-@article{vge,
+@article{Gillis2026VGE,
   author = {Gillis, H. Martin  and Xu, Isaac and Trappenberg, Thomas}
   title={Variance-Gated Ensembles: An Epistemic-Aware Framework for Uncertainty Estimation},
-  journal={},
-  year={},
-  doi: {}
+  year={2026},
+  url={https://arxiv.org/abs/2602.08142},
 }
 ```
 
