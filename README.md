@@ -40,7 +40,7 @@ where μ is the ensemble mean, σ is the ensemble standard deviation, and k is a
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/nextdevai/vge.git
 cd vge
 ```
 
