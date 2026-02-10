@@ -369,7 +369,7 @@ trainer = EnsembleTrainer(
     log_dir="./logs/lle",
 )
 
-# trainer.fit(num_epochs=200, train_batches=train_loader, valid_batches=val_loader)
+# trainer.fit(num_epochs=100, train_batches=train_loader, valid_batches=val_loader)
 
 # Inference
 x = torch.randn(32, 3, 32, 32)
